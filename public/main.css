@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+html {
+  background-color: #181719; }
+
 body {
   margin: 0; }
 
@@ -32,35 +35,61 @@ a {
   background-color: #181719; }
 
 .banner__container {
-  padding: 10px; }
+  padding: 10px;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .banner__container {
+      flex-direction: row;
+      margin-top: 50px;
+      padding: 30px; } }
 
-.banner__content h1 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-  font-size: 36px;
-  font-family: 'Lora';
-  font-weight: 400; }
-
-.banner__content p {
-  font-family: 'Montserrat';
-  font-weight: 300;
-  color: white;
-  font-size: 0.875rem;
-  width: 250px;
-  line-height: 17px;
-  margin-bottom: 25px; }
-
-.banner__content div {
-  font-family: 'Montserrat';
-  font-weight: 600; }
-  .banner__content div a {
-    display: flex;
-    align-items: center; }
-  .banner__content div span {
-    padding: 10px 0;
-    display: inline-block;
-    margin-right: 15px; }
+.banner__content {
+  font-size: 1rem; }
+  .banner__content h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 2.25em;
+    line-height: 46px;
+    font-family: 'Lora';
+    font-weight: 400; }
+    @media (min-width: 540px) {
+      .banner__content h1 {
+        font-size: 3em;
+        line-height: 61px; } }
+  .banner__content p {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: white;
+    font-size: 0.875em;
+    width: 250px;
+    line-height: 17px;
+    margin-bottom: 25px; }
+    @media (min-width: 540px) {
+      .banner__content p {
+        font-size: 1.5em;
+        line-height: 29px;
+        width: 70%; } }
+  .banner__content div {
+    font-family: 'Montserrat';
+    font-weight: 600; }
+    .banner__content div a {
+      display: flex;
+      align-items: center; }
+    .banner__content div span {
+      padding: 10px 0;
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 0.875em; }
+      @media (min-width: 540px) {
+        .banner__content div span {
+          font-size: 1.125em;
+          line-height: 22px; } }
+  @media (min-width: 768px) {
+    .banner__content {
+      width: calc(50% - 16px);
+      margin-right: 16px; } }
 
 .banner__image {
   margin-top: 25px;
@@ -68,14 +97,19 @@ a {
   .banner__image img {
     width: 100%;
     max-width: 100%; }
+  @media (min-width: 768px) {
+    .banner__image {
+      margin-left: 16px;
+      width: calc(50% - 16px); } }
 
 .banner__card {
   background-color: #181719;
-  width: 80%;
+  width: 300px;
   position: absolute;
   padding: 10px;
-  right: 14px;
-  top: 80%; }
+  right: 10px;
+  top: 80%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
 
 .card__header {
   display: flex;
@@ -84,12 +118,11 @@ a {
     width: 62px;
     height: 52px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .card__header .card__img img {
       display: block;
       width: 60%;
-      margin: 0 auto;
-      line-height: 52px;
       border-radius: 100%; }
   .card__header .card__title {
     margin-left: 2px; }
@@ -98,6 +131,7 @@ a {
       font-family: 'Montserrat';
       font-weight: 500; }
       .card__header .card__title p:first-child {
+        margin-bottom: 5px;
         font-size: 0.75rem;
         color: white; }
       .card__header .card__title p:nth-of-type(2) {
@@ -105,9 +139,10 @@ a {
         color: #828282; }
 
 .card__body {
-  padding-left: 10px; }
+  padding: 0 10px;
+  width: 210px; }
   .card__body h3 {
     color: white;
     font-family: 'Lora';
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: bold; }
