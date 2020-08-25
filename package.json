@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w sass -o ./style.css" 
+    "sass": "node-sass -w sass/main.scss -o public/" 
   },
   "keywords": [],
   "author": "Camilo Perilla <camiloa0318@gmail.com>",
