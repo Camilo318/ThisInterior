@@ -110,6 +110,8 @@ a {
 .banner__image {
     margin-top: 25px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
     img {
         width: 100%;
         max-width: 100%;

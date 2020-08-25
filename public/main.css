@@ -93,7 +93,9 @@ a {
 
 .banner__image {
   margin-top: 25px;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: flex-end; }
   .banner__image img {
     width: 100%;
     max-width: 100%; }
