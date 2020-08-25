@@ -22,7 +22,8 @@ a {
   border: 1px solid white;
   padding: 9px;
   font-family: 'Crimson Pro';
-  font-weight: 200; }
+  font-weight: 200;
+  cursor: pointer; }
 
 .header__menu a i {
   font-size: 2rem; }
@@ -47,7 +48,8 @@ a {
   color: white;
   font-size: 0.875rem;
   width: 250px;
-  line-height: 17px; }
+  line-height: 17px;
+  margin-bottom: 25px; }
 
 .banner__content div {
   font-family: 'Montserrat';
@@ -59,3 +61,53 @@ a {
     padding: 10px 0;
     display: inline-block;
     margin-right: 15px; }
+
+.banner__image {
+  margin-top: 25px;
+  position: relative; }
+  .banner__image img {
+    width: 100%;
+    max-width: 100%; }
+
+.banner__card {
+  background-color: #181719;
+  width: 80%;
+  position: absolute;
+  padding: 10px;
+  right: 14px;
+  top: 80%; }
+
+.card__header {
+  display: flex;
+  align-items: center; }
+  .card__header .card__img {
+    width: 62px;
+    height: 52px;
+    display: flex;
+    align-items: center; }
+    .card__header .card__img img {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+      line-height: 52px;
+      border-radius: 100%; }
+  .card__header .card__title {
+    margin-left: 2px; }
+    .card__header .card__title p {
+      margin: 0;
+      font-family: 'Montserrat';
+      font-weight: 500; }
+      .card__header .card__title p:first-child {
+        font-size: 0.75rem;
+        color: white; }
+      .card__header .card__title p:nth-of-type(2) {
+        font-size: 0.625rem;
+        color: #828282; }
+
+.card__body {
+  padding-left: 10px; }
+  .card__body h3 {
+    color: white;
+    font-family: 'Lora';
+    font-size: 1.1rem;
+    font-weight: bold; }

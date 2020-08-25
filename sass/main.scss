@@ -28,6 +28,7 @@ a {
     padding: 9px;
     font-family: 'Crimson Pro';
     font-weight: 200;
+    cursor: pointer;
 }
 
 .header__menu a i {
@@ -59,6 +60,7 @@ a {
         font-size: 0.875rem;
         width: 250px;
         line-height: 17px;
+        margin-bottom: 25px;
     }
     div {
         font-family: 'Montserrat';
@@ -73,5 +75,67 @@ a {
             margin-right: 15px;
         }
     }
-    
 } 
+
+.banner__image {
+    margin-top: 25px;
+    position: relative;
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.banner__card {
+    background-color: #181719;
+    width: 80%;
+    position: absolute;
+    padding: 10px;
+    right: 14px;
+    top: 80%;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    .card__img {
+        width: 62px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            width: 60%;
+            margin: 0 auto;
+            line-height: 52px;
+            border-radius: 100%;
+        }
+    }
+
+    .card__title {
+        margin-left: 2px;
+        p {
+            margin: 0;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            &:first-child {
+                font-size: 0.75rem;
+                color: white;
+            }
+            &:nth-of-type(2) {
+                font-size: 0.625rem;
+                color: #828282;
+            }
+        }
+    }
+}
+
+.card__body {
+    padding-left: 10px;
+    h3 {
+        color: white;
+        font-family: 'Lora';
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
