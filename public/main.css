@@ -18,6 +18,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (min-width: 768px) {
+    .header__container {
+      padding: 40px 30px; } }
 
 .header__logo {
   text-transform: uppercase;
@@ -35,22 +38,51 @@ a {
   .header__menu {
     display: none; } }
 
-.header__navigation {
+.header__navigation--desktop {
   display: none;
-  width: 55%; }
-  .header__navigation nav ul {
+  width: 60%; }
+  .header__navigation--desktop nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: space-evenly;
     padding: 0;
-    justify-content: space-evenly; }
-    .header__navigation nav ul li a {
+    margin: 0; }
+    .header__navigation--desktop nav ul li a {
+      display: block;
       font-size: 1rem;
       font-weight: 500;
       font-family: 'Montserrat';
       padding: 10px; }
   @media (min-width: 640px) {
-    .header__navigation {
+    .header__navigation--desktop {
       display: block; } }
+
+.header__navigation--mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #181719;
+  transform: translateX(100%);
+  z-index: 1; }
+  .header__navigation--mobile nav {
+    height: 100%; }
+    .header__navigation--mobile nav ul {
+      height: inherit;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center; }
+      .header__navigation--mobile nav ul li a {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        padding: 32px; }
 
 .banner {
   background-color: #181719; }
@@ -63,7 +95,7 @@ a {
     .banner__container {
       flex-direction: row;
       margin-top: 50px;
-      padding: 30px; } }
+      padding: 50px 30px; } }
 
 .banner__content {
   font-size: 1rem; }
