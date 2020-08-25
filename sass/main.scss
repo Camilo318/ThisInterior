@@ -76,9 +76,14 @@ a {
     right: 0;
     background-color: #181719;
     transform: translateX(100%);
+    padding: 20px;
     z-index: 1;
     nav {
         height: 100%;
+        span {
+            color: white;
+            float: right;
+        }
         ul {
             height: inherit;
             list-style-type: none;
@@ -164,13 +169,13 @@ a {
     }
 
     @media (min-width: 768px) {
-        width: calc(50% - 16px);
+        width: calc(40% - 16px);
         margin-right: 16px;
     }
 } 
 
 .banner__image {
-    margin-top: 25px;
+    // margin-top: 25px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -181,7 +186,7 @@ a {
 
     @media (min-width: 768px) {
         margin-left: 16px;
-        width: calc(50% - 16px);
+        width: calc(60% - 16px);
     }
 }
 
