@@ -128,7 +128,7 @@ a {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
+    @media (min-width: 1000px) {
         flex-direction: row;
         margin-top: 50px;
         padding: 50px 30px;
@@ -188,7 +188,7 @@ a {
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1000px) {
         width: calc(40% - 16px);
         margin-right: 16px;
     }
@@ -204,7 +204,7 @@ a {
         max-width: 100%;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1000px) {
         margin-left: 16px;
         width: calc(60% - 16px);
     }

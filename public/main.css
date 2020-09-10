@@ -110,7 +110,7 @@ a {
   padding: 10px;
   display: flex;
   flex-direction: column; }
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .banner__container {
       flex-direction: row;
       margin-top: 50px;
@@ -162,7 +162,7 @@ a {
         .banner__content div span {
           font-size: 1.125em;
           line-height: 22px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .banner__content {
       width: calc(40% - 16px);
       margin-right: 16px; } }
@@ -174,7 +174,7 @@ a {
   .banner__image img {
     width: 100%;
     max-width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .banner__image {
       margin-left: 16px;
       width: calc(60% - 16px); } }
