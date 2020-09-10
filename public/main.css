@@ -223,3 +223,26 @@ a {
     @media (min-width: 540px) {
       .card__body h3 {
         font-size: 1.5rem; } }
+
+footer {
+  margin-top: 100px; }
+  @media (min-width: 768px) {
+    footer {
+      margin-top: 70px; } }
+  footer .footer__container {
+    padding: 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center; }
+    footer .footer__container p {
+      border-top: 1px solid #A9A9A9;
+      padding: 10px  15px 0 15px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #A9A9A9; }
+      @media (min-width: 768px) {
+        footer .footer__container p {
+          border-top: none; } }
+      footer .footer__container p a {
+        color: #A9A9A9; }

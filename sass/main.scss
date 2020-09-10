@@ -266,3 +266,31 @@ a {
         }
     }
 }
+
+footer {
+    margin-top: 100px;
+    @media (min-width: 768px) {
+        margin-top: 70px;
+    }
+    .footer__container {
+        padding: 20px;
+        max-width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        
+        p {
+            border-top: 1px solid #A9A9A9;
+            padding: 10px  15px 0 15px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: #A9A9A9;
+            @media (min-width: 768px) {
+                border-top: none;
+            }
+            a {
+                color: #A9A9A9;
+            }
+        }
+    }
+}
