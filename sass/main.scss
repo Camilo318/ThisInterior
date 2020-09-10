@@ -13,6 +13,7 @@ a {
 }
 
 .header__container {
+    visibility: 0;
     width: 100%;
     padding: 20px 12px;
     background-color: #181719;
@@ -70,7 +71,7 @@ a {
         display: block;
     }
 }
-.header__navigation--mobile {
+.navigation-mobile {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -119,9 +120,11 @@ a {
 
 .banner {
     background-color: #181719;
+    position: relative;
 }
 
 .banner__container {
+    position: relative;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -132,10 +135,12 @@ a {
     }
 }
 
-.banner__content{
+.banner__content {
     font-size: 1rem;
+    position: relative;
 
     h1 {
+        visibility: hidden;
         margin-top: 0;
         margin-bottom: 25px;
         color: white;
@@ -149,6 +154,7 @@ a {
         }
     }
     p {
+        visibility: hidden;
         font-family: 'Montserrat';
         font-weight: 300;
         color: white;
@@ -165,6 +171,7 @@ a {
     div {
         font-family: 'Montserrat';
         font-weight: 600;
+        margin-bottom: 2rem;
         a {
             display: flex;
             align-items: center;  
@@ -208,9 +215,13 @@ a {
     position: absolute;
     padding: 10px;
     top: 80%;
-    left: 20%;
-    right: 5%;
+    left: 10%;
+    right: 3%;
     box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+    @media (min-width: 768px) {
+        left: 40%;
+        right: 5%
+    }
 }
 
 .card__header {

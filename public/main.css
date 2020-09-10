@@ -12,6 +12,7 @@ a {
   color: white; }
 
 .header__container {
+  visibility: 0;
   width: 100%;
   padding: 20px 12px;
   background-color: #181719;
@@ -59,7 +60,7 @@ a {
     .header__navigation--desktop {
       display: block; } }
 
-.header__navigation--mobile {
+.navigation-mobile {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -70,20 +71,20 @@ a {
   padding: 20px 12px;
   z-index: 1;
   transition: all 0.5s ease-in-out; }
-  .header__navigation--mobile.showHide {
+  .navigation-mobile.showHide {
     transform: translateX(0); }
-  .header__navigation--mobile nav {
+  .navigation-mobile nav {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .header__navigation--mobile nav span {
+    .navigation-mobile nav span {
       color: white;
       align-self: flex-end;
       font-size: 2rem;
       cursor: pointer; }
-    .header__navigation--mobile nav ul {
+    .navigation-mobile nav ul {
       width: 100%;
       height: 100%;
       list-style-type: none;
@@ -93,7 +94,7 @@ a {
       margin: 0;
       justify-content: center;
       align-items: center; }
-      .header__navigation--mobile nav ul li a {
+      .navigation-mobile nav ul li a {
         display: block;
         font-size: 1rem;
         font-weight: 500;
@@ -101,9 +102,11 @@ a {
         padding: 18px; }
 
 .banner {
-  background-color: #181719; }
+  background-color: #181719;
+  position: relative; }
 
 .banner__container {
+  position: relative;
   padding: 10px;
   display: flex;
   flex-direction: column; }
@@ -114,8 +117,10 @@ a {
       padding: 50px 30px; } }
 
 .banner__content {
-  font-size: 1rem; }
+  font-size: 1rem;
+  position: relative; }
   .banner__content h1 {
+    visibility: hidden;
     margin-top: 0;
     margin-bottom: 25px;
     color: white;
@@ -128,6 +133,7 @@ a {
         font-size: 3em;
         line-height: 61px; } }
   .banner__content p {
+    visibility: hidden;
     font-family: 'Montserrat';
     font-weight: 300;
     color: white;
@@ -142,7 +148,8 @@ a {
         width: 70%; } }
   .banner__content div {
     font-family: 'Montserrat';
-    font-weight: 600; }
+    font-weight: 600;
+    margin-bottom: 2rem; }
     .banner__content div a {
       display: flex;
       align-items: center; }
@@ -177,9 +184,13 @@ a {
   position: absolute;
   padding: 10px;
   top: 80%;
-  left: 20%;
-  right: 5%;
+  left: 10%;
+  right: 3%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+  @media (min-width: 768px) {
+    .banner__card {
+      left: 40%;
+      right: 5%; } }
 
 .card__header {
   display: flex;
